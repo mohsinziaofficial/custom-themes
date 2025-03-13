@@ -5,7 +5,8 @@ To see the theme in action, visit:
 
 # Screenshot  
 
-![Uploading screencapture-xamatech-2025-03-13-02_48_01.png…]()
+![screencapture-xamatech-2025-03-13-02_48_01](https://github.com/user-attachments/assets/c86afd2e-b380-44e1-b261-f70ba40d1207)
+
 
 
 # Theme Overview  
