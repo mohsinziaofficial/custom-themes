@@ -3,6 +3,11 @@
 To see the theme in action, visit:  
 🔗 [Live Preview](https://fund-me.co.uk/) 
 
+# Screenshot  
+
+![screencapture-fund-me-co-uk-2025-03-13-02_44_10](https://github.com/user-attachments/assets/43f4adc6-036b-4238-8477-fada7d04d6cc)
+
+
 # Theme Overview
 
 This theme provides a clean and structured layout suitable for building professional websites. It offers a well-organized design that ensures a smooth user experience while maintaining flexibility for customization.
