@@ -5,7 +5,7 @@ To see the theme in action, visit:
 
 # Screenshot 
 
-![screencapture-randdtest-je-hosting-co-uk-2025-03-13-02_52_29](https://github.com/user-attachments/assets/7b362134-4b04-40d8-a147-0da74939d432)
+![screencapture-randdtest-je-hosting-co-uk-2025-03-13-02_52_29](https://github.com/user-attachments/assets/58ca1bca-4376-4963-8db3-ded4626937eb)
 
 
 # Theme Overview  
