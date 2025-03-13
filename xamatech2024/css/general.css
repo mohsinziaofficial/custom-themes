@@ -1,0 +1,368 @@
+@font-face {
+	font-family: Raleway;
+	src: url("../assets/fonts/Raleway/Raleway-Thin.ttf");
+	font-weight: 100;
+}
+@font-face {
+	font-family: Raleway;
+	src: url("../assets/fonts/Raleway/Raleway-ExtraLight.ttf");
+	font-weight: 200;
+}
+@font-face {
+	font-family: Raleway;
+	src: url("../assets/fonts/Raleway/Raleway-Light.ttf");
+	font-weight: 300;
+}
+@font-face {
+	font-family: Raleway;
+	src: url("../assets/fonts/Raleway/Raleway-Regular.ttf");
+	font-weight: 400;
+}
+@font-face {
+	font-family: Raleway;
+	src: url("../assets/fonts/Raleway/Raleway-Medium.ttf");
+	font-weight: 500;
+}
+@font-face {
+	font-family: Raleway;
+	src: url("../assets/fonts/Raleway/Raleway-SemiBold.ttf");
+	font-weight: 600;
+}
+@font-face {
+	font-family: Raleway;
+	src: url("../assets/fonts/Raleway/Raleway-Bold.ttf");
+	font-weight: 700;
+}
+@font-face {
+	font-family: Raleway;
+	src: url("../assets/fonts/Raleway/Raleway-ExtraBold.ttf");
+	font-weight: 800;
+}
+@font-face {
+	font-family: Raleway;
+	src: url("../assets/fonts/Raleway/Raleway-Black.ttf");
+	font-weight: 900;
+}
+
+* {
+  transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -webkit-transition: .5s all ease-in-out;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --pink:         #E13188;
+  --darkpink:     #FF007E;
+	--black:        #000000;
+  --white:        #FFFFFF;
+  --grey:         #999999;
+  --lgrey:        #E7E1E1;
+  --lightgrey:    #DFDFDF;
+  --darkgrey:     #333333;
+}
+body{
+	font-family: Raleway;
+	font-weight: 400;
+  scrollbar-gutter: stable both-edges;
+}
+/* General Styles */
+
+/* scroll bar */
+::-webkit-scrollbar { /* width */
+  width: 10px;
+  border: 1px solid var(--black);
+}
+
+::-webkit-scrollbar-track { /* Track */
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb { /* Handle */
+  background: var(--pink);
+  border: 1px solid var(--black);
+}
+
+::-webkit-scrollbar-thumb:hover { /* Handle on hover */
+  background: var(--darkpink); 
+}
+/* scroll bar end */
+
+.container{
+	width: 100%;
+	max-width: 1300px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.button-black,
+.button-pink,
+#searchsubmit {
+  text-align: center;
+  background-color: var(--pink);
+  padding: 5px 40px;
+  color: var(--white);
+  font-weight: 700;
+  display: inline-block;
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.button-black {
+  background-color: var(--black);
+}
+.header-social-icon:hover > img,
+.button-black:hover,
+.button-pink:hover,
+#searchsubmit:hover {
+  transform: scale(1.05);
+  color: var(--white);
+}
+/* End General Styles */
+/* Font Style */
+h1, h2, h3, h4, h5, h6{
+	font-family: Raleway;
+	color: var(--pink);
+	margin-bottom: 20px;
+	font-weight: 700;
+  line-height: 1.2em;
+}
+h1{
+	font-size: 38px;
+}
+h2{
+	font-size: 35px;
+}
+h3{
+	font-size: 30px;
+}
+h4{
+	font-size: 28px;
+}
+h5{
+	font-size: 25px;
+}
+h6{
+	font-size: 20px;
+}
+p, li, a, td, th, #s {
+	font-size: 16px;
+	line-height: 1.6em;
+	font-weight: 400;
+	color: var(--black);
+}
+ul.whiteList li,
+ol.whiteList li {
+  color: var(--white);
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+	font-size: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+p, ul, ol, table{
+	margin-bottom: 20px;
+}
+p:last-child{
+	margin-bottom: 0;
+}
+blockquote{
+	margin-bottom: 20px;
+}
+blockquote p {
+	font-weight: 600;
+	font-size: 120%;
+	line-height: 1.4em;
+}
+ul, ol {
+	padding-left: 20px;
+	margin-top: -10px;
+}
+ul{
+	list-style-type: disc;
+}
+ol{
+	list-style-type: decimal;
+}
+ul ul, ol ol, ul ol, ol ul{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+table{
+	width: 100%;
+}
+table th {
+	background-color: var(--grey);
+	color: var(--black);
+	font-weight: 600;
+	text-align: left;
+}
+table th, table td{
+	padding: 5px;
+	border: 1px solid var(--grey);
+}
+table tr:nth-child(2n){
+	background-color: var(--lightgrey);
+}
+/*
+a, i, #searchsubmit{
+	transition: all .5s ease-in-out;
+}
+*/
+a{
+	color: var(--pink);
+	text-decoration: none;
+  font-weight: 600;
+}
+a:hover{
+	color: var(--darkpink);
+}
+a.black-link {
+	color: var(--black);
+	text-decoration: none;
+  font-weight: 600;
+}
+a.black-link:hover {
+	color: var(--darkgrey);
+}
+/* End Font Style */
+
+/* Search */
+#searchform {
+	margin-bottom: 20px;
+}
+#searchform #s {
+	border: 1px solid var(--darkgrey);
+}
+#searchsubmit {
+	border: 0;
+	font-size: 16px;
+	line-height: 1.6em;
+	cursor: pointer;
+	padding: 3px 22px;
+	font-family: Raleway;
+}
+/* End of Search */
+/* Menu */
+nav{
+	padding: 10px 0;
+}
+.menu, .menu ul {
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
+}
+.menu{
+	display: flex;
+	gap: 20px;
+}
+.menu li{
+	position: relative;
+  float: left;
+  margin: 0px;
+}
+.menu li:hover {
+  transform: scale(1.05);
+}
+.menu li a {
+	color: var(--white);
+	width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.menu li.current-menu-item {
+  transform: scale(1.05);
+}
+.menu li.current-menu-item > a,
+.menu li a:hover{
+	color: var(--pink);
+  font-weight: 700;
+}
+.menu .menu-item.has-sub-menu:hover > .sub-menu {
+/*  display: block;*/
+  visibility: visible;
+  opacity: 1;
+}
+.fa-caret-down {
+  margin-left: 5px;
+  color: var(--white);
+  position: relative;
+  top: -1px;
+}
+.menu .menu-item.has-sub-menu:hover > .fa-caret-down {
+  color: var(--pink);
+}
+.sub-menu {
+  visibility: hidden;
+  opacity: 0;
+	position: absolute;
+	background-color: var(--pink);
+	min-width: 200px;
+	z-index: 8;
+  padding: 20px 10px !important;
+}
+.sub-menu li {
+	padding: 5px 15px;
+}
+.sub-menu li:hover {
+  transform: scale(1.05);
+}
+.sub-menu li a:hover{
+	color: var(--black);
+}
+.sub-menu li.current-menu-item > a {
+	color: var(--black);
+  font-weight: 700;
+}
+.sub-menu .sub-menu {
+	right: -100%;
+	top: 0;
+}
+/* End Menu */
+
+
+/* Device = Laptops, Desktops */
+@media (min-width: 1025px) and (max-width: 1600px) {
+  /* General Styles */
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+/* Device = Tablets, Ipads (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+   .archive-loop {
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+
+/* Device = Tablets, Ipads (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.archive-loop {
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+	.archive-loop {
+		grid-template-columns: repeat(1,1fr);
+	}
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+	.archive-loop {
+		grid-template-columns: repeat(1,1fr);
+	}
+}
+
