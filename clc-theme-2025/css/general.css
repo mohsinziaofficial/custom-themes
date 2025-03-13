@@ -1,0 +1,222 @@
+@font-face {
+	font-family: UrbanistLocal;
+	src: url(../assets/fonts/Urbanist-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: UrbanistLocal;
+	src: url(../assets/fonts/Urbanist-Medium.ttf);
+	font-weight: 500;
+}
+@font-face {
+	font-family: UrbanistLocal;
+	src: url(../assets/fonts/Urbanist-SemiBold.ttf);
+	font-weight: 600;
+}
+@font-face {
+	font-family: UrbanistLocal;
+	src: url(../assets/fonts/Urbanist-Bold.ttf);
+	font-weight: 700;
+}
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+:root {
+	--textcolour: #2B2110;
+	--dred: #720617;
+	--maroon: #8E0946;
+	--red: #A00E2B;
+	--peach: #FF613C;
+	--orange : #FF7828;
+	--dorange : #D13304;
+	--yellow : #FDB522;
+  --white: #FFFFFF;
+  --grey: #F3F2F4;
+  
+  --greyRGB: rgba(34, 16, 43, 0.05);
+  --blackRGB: rgba(0, 0, 0, 0.45);
+  --redRGB: rgba(160, 14, 43, 0.7);
+  
+  /* for animation library */
+  --animate-delay: 0.5s;
+}
+/* scroll bar */
+::-webkit-scrollbar { /* width */
+  width: 10px;
+  border: 1px solid var(--black);
+}
+
+::-webkit-scrollbar-track { /* Track */
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb { /* Handle */
+  background: var(--yellow);
+  border: 1px solid var(--red);
+}
+/* scroll bar end */
+.container{
+	width: 100%;
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+body{
+	font-family: UrbanistLocal;
+  font-weight: 400;
+	color: var(--textcolour);
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	width: auto;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: UrbanistLocal;
+	margin: 0px 0px 20px 0px;
+	line-height: 1.2em;
+  font-weight: 500;
+	color: var(--red);
+}
+h1{
+	font-size: 2em;
+  font-weight: 700;
+}
+h2{
+	font-size: 1.5em;
+}
+h3{
+	font-size: 1.17em;
+}
+h4{
+	font-size: 1.33em;
+}
+h5{
+	font-size: 0.83em;
+}
+h6{
+	font-size: 0.67em;
+}
+p, li, th, td {
+	font-size: 18px;
+	color: var(--textcolour);
+	line-height: 1.4em;
+	font-family: UrbanistLocal;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+p {
+	margin-bottom: 20px;
+}
+p:last-child{
+	margin-bottom: 0;
+}
+li::marker {
+  color: var(--orange);
+}
+blockquote{
+	margin-bottom: 20px;
+}
+blockquote p{
+	font-size: 20px;
+	color: var(--red);
+	font-family: UrbanistLocal;
+	font-weight: 600;
+}
+strong {
+	font-family: UrbanistLocal;
+	font-weight: 600;
+  color: var(--red);
+}
+ul, ol{
+	padding-left: 16px;
+	margin-bottom: 20px;
+}
+p ~ ul, p ~ ol{
+	margin-top: -10px;
+}
+ul ul, ol ol, ul ol, ol ul{
+	margin: 0;
+}
+ul{
+	list-style-type: disc;
+}
+ol{
+	list-style-type: decimal;
+}
+a{
+	color: var(--red);
+  font-weight: 500;
+	text-decoration: none;
+}
+a:hover{
+	color: var(--peach);
+}
+.clcbutton a {
+  text-transform: uppercase;
+  font-size: 16px !important;
+  background-color: var(--white) !important;
+  border: 1px solid var(--orange) !important;
+  padding: 10px 25px !important;
+  color: var(--red)!important;
+  font-family: UrbanistLocal;
+  font-weight: 600;
+}
+.clcbutton a:hover {
+  background-image: none;
+  background-color: var(--red) !important;
+  color: var(--white)!important;
+  transition: all 0.3s linear;
+}
+.TopBar {
+	padding: 0;
+	background-color: var(--red);
+}
+.TopBar .container {
+	text-align: right;
+	display: flex;
+	justify-content: end;
+	gap: 20px;
+}
+.TopBar .contactinfo {
+	color: var(--white);
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+}
+.TopBar .contactinfo a {
+	color: var(--white);
+}
+.TopBar .TopLinks {
+	display: flex;
+	gap: 5px;
+}
+.TopBar .TopLinks a {
+	color: var(--white);
+	display: block;
+	background: var(--dred);
+	padding: 12px;
+}
+.TopBar .TopLinks a:hover {
+	background: var(--peach);
+}
+.TopBar .TopLinks img {
+	width: 80%;
+}
+header {
+	padding: 19px 0;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	background: var(--white);
+	border-bottom: 3px solid var(--yellow);
+}
+header .container {
+	display: grid;
+	grid-template-columns: 20% 78%;
+	gap: 2%;
+	align-items: center;
+}
