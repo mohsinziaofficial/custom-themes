@@ -25,14 +25,10 @@ To use this feature, you need to install and activate the **Advanced Custom Fiel
 
 ## Screenshots
 
-**Landing Page Screenshots:**
+**Landing Page:**
 
-![{CE1F88C2-7D42-4660-A361-1D81C44B9D5D}](https://github.com/user-attachments/assets/81fced42-6e08-4504-a0c1-6a9abd85326f)
+![landing page](https://github.com/user-attachments/assets/bf57322a-da89-432f-94ab-10484bc30489)
 
-![{00DADCBB-6DF4-4481-9C44-E894CE236002}](https://github.com/user-attachments/assets/925b3b9f-179f-4ef1-abc4-9aad8f43514d)
-
-![{796E3D81-DF13-4898-9666-DA9443EE1732}](https://github.com/user-attachments/assets/9e834378-84c1-4cde-bc2c-be7f2e51bd9f)
-
-**Inner Page Screenshot:**
+**Inner Page:**
 
 ![inner page](https://github.com/user-attachments/assets/c4d40daf-0c3f-4911-9ddd-c4a176f7810a)
