@@ -1,3 +1,8 @@
+# Live Demo  
+
+To see the theme in action, visit:  
+🔗 [Live Preview](https://delphini.je-hosting.co.uk/)  
+
 # Theme Overview
 
 This theme provides a simple yet effective layout, making it a great starting point for various types of websites. It is lightweight, easy to use, and follows best practices for clean and efficient coding. Whether you're building a personal blog, business website, or portfolio, this theme offers a solid foundation with flexibility for customization.
@@ -23,9 +28,4 @@ This theme provides a simple yet effective layout, making it a great starting po
 
 1. Download and extract the theme files.  
 2. Upload the theme folder to the `/wp-content/themes/` directory.  
-3. Activate the theme from the WordPress admin dashboard under **Appearance > Themes**.  
-
-## Live Demo  
-
-To see the theme in action, visit:  
-🔗 [Live Preview](https://delphini.je-hosting.co.uk/)  
+3. Activate the theme from the WordPress admin dashboard under **Appearance > Themes**.
