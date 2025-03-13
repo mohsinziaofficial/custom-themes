@@ -1,7 +1,12 @@
 # Live Demo  
 
 To see the theme in action, visit:  
-🔗 [Live Preview](https://fft.co.uk/)  
+🔗 [Live Preview](https://fft.co.uk/) 
+
+# Screenshot  
+
+![screencapture-fft-co-uk-2025-03-13-02_42_38](https://github.com/user-attachments/assets/94e37a32-172e-4579-8765-76afe79fcd12)
+
 
 # Theme Overview  
 
