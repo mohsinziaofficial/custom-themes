@@ -5,8 +5,7 @@ To explore the theme in action, visit:
 
 # Screenshot 
 
-![Uploading screencapture-cartercamerons-2025-03-13-02_54_57.png…]()
-
+![screencapture-cartercamerons-2025-03-13-02_54_57](https://github.com/user-attachments/assets/664ba67a-84b5-464d-b649-7ba8eea2113f)
 
 # Theme Overview  
 
