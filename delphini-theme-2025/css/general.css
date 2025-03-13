@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'BalooBhaijaan2';
+    src: url('assets/fonts/Baloo/BalooBhaijaan2-VariableFont_wght.woff') format('woff'),
+         url('assets/fonts/Baloo/BalooBhaijaan2-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Variable weight from 100 to 900 */
+    font-style: normal;
+}
+/* Raleway Font */
+@font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway/Raleway-VariableFont_wght.woff') format('woff')
+         url('assets/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Variable weight from 100 to 900 */
+    font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+	--textcolour: #000;
+}
+body{
+	font-family: Raleway;
+	font-weight: 400;
+}
+/* General Styles */
+.container{
+	width: 100%;
+	max-width: 1100px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.Button, #searchsubmit{
+	background-color: #55acee;
+	padding: 11px 22px;
+	color: #fff;
+	font-weight: 700;
+	display: inline-block;
+}
+.Button:hover, #searchsubmit:hover{
+	background-color: #2E79B1;
+	color: #fff;
+}
+/* End General Styles */
+/* Font Style */
+h1, h2, h3, h4, h5, h6{
+	font-family: BalooBhaijaan2;
+	color: var(--textcolour);
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+h1{
+	font-size: 38px;
+}
+h2{
+	font-size: 35px;
+}
+h3{
+	font-size: 30px;
+}
+h4{
+	font-size: 28px;
+}
+h5{
+	font-size: 25px;
+}
+h6{
+	font-size: 20px;
+}
+p, li, a, td, th, #s {
+	font-size: 16px;
+	line-height: 1.6em;
+	font-weight: 400;
+	color: var(--textcolour);
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+	font-size: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+p, ul, ol, table{
+	margin-bottom: 20px;
+}
+p:last-child{
+	margin-bottom: 0;
+}
+blockquote{
+	margin-bottom: 20px;
+}
+blockquote p {
+	font-weight: 600;
+	font-size: 120%;
+	line-height: 1.4em;
+}
+ul, ol {
+	padding-left: 20px;
+	margin-top: -10px;
+}
+ul{
+	list-style-type: disc;
+}
+ol{
+	list-style-type: decimal;
+}
+ul ul, ol ol, ul ol, ol ul{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+table{
+	width: 100%;
+}
+table th {
+	background-color: #999999;
+	color: #000;
+	font-weight: 600;
+	text-align: left;
+}
+table th, table td{
+	padding: 5px;
+	border: 1px solid #999;
+}
+table tr:nth-child(2n){
+	background-color: #eee;
+}
+a, i, #searchsubmit{
+	transition: all .5s ease-in-out;
+}
+a{
+	color: #55acee;
+	text-decoration: none;
+}
+a:hover{
+	color: #1DBADF;
+}
+/* End Font Style */
+
+/* Search */
+#searchform {
+	margin-bottom: 20px;
+}
+#searchform #s {
+	border: 1px solid #333;
+}
+#searchsubmit {
+	border: 0;
+	font-size: 16px;
+	line-height: 1.6em;
+	cursor: pointer;
+	padding: 3px 22px;
+	font-family: Raleway;
+}
+/* End of Search */
+/* Menu */
+nav{
+	padding: 10px 0;
+}
+.menu, .menu ul {
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
+}
+.menu ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    display: none;
+}
+.menu li{
+	position: relative;
+}
+.sub-menu {
+	display: none;
+	position: absolute;
+	background-color: #55acee;
+	min-width: 150px;
+	z-index: 8;
+}
+.sub-menu .sub-menu {
+	right: -100%;
+	top: 0;
+}
+.menu li a {
+	color: #fff;
+	width: 100%;
+	display: block;
+    transition: all 0.3s;
+}
+.sub-menu li a{
+	padding: 5px 15px;
+    
+}
+.menu li a:hover{
+	color: #ffffff;    
+}
+/* End Menu */
+#ContentWrap {
+	padding: 50px 0;
+    position: relative;
+}
+/* Archive */
+.archive-loop {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 30px;
+}
+.ArticleImgWrap {
+	display: block;
+	width: 100%;
+	height: 225px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.navigation.pagination {
+	background-color: unset;
+	text-align: center;
+	margin-top: 30px;
+	padding: 0;
+}
+.page-numbers {
+	background-color: #55acee;
+	padding: 4px;
+	color: #fff;
+}
+a.page-numbers:hover, .page-numbers.current{
+	background-color: #000;
+	color: #fff;
+}
+/* End of Archive */
+
+
+
+
+/* Device = Laptops, Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/* Device = Tablets, Ipads (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+   .archive-loop {
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+
+/* Device = Tablets, Ipads (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.archive-loop {
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+	.archive-loop {
+		grid-template-columns: repeat(1,1fr);
+	}
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+	.archive-loop {
+		grid-template-columns: repeat(1,1fr);
+	}
+}
+
