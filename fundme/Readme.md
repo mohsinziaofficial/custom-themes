@@ -1,7 +1,7 @@
 # Live Demo  
 
 To see the theme in action, visit:  
-🔗 [Live Preview]([https://delphini.je-hosting.co.uk/](https://fund-me.co.uk/)) 
+🔗 [Live Preview]([https://fund-me.co.uk/])) 
 
 # Theme Overview
 
