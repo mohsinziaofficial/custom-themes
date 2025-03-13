@@ -1,0 +1,208 @@
+/**********/
+/* header */
+/**********/
+.header-menu {
+  transform: translateY(-100%);
+  visibility: hidden;
+}
+.header-menu.animate {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/****************/
+/* hero section */
+/****************/
+.page-hero .bg-and-news .left {
+  visibility: hidden;
+  transform: translateX(-50%);
+}
+.page-hero .bg-and-news .right {
+  visibility: hidden;
+  transform: translateX(50%);
+}
+.page-hero .bg-and-news .right.animate,
+.page-hero .bg-and-news .left.animate {
+  visibility: visible;
+  transform: translateX(0);
+  transition-property: transform;
+  transition-delay: 0.0s;
+/*  transition-duration: 0.5s;*/
+  transition-timing-function: linear;
+}
+.custom-title span,
+.custom-tag-line {
+  transform: translateX(-80%);
+  visibility: hidden;
+}
+.custom-title span.animate,
+.custom-tag-line.animate {
+  visibility: visible;
+  transform: translateX(0);
+/*  transition-duration: 0.5s;*/
+  transition-timing-function: linear;
+}
+.custom-title span:nth-of-type(1).animate {
+  transition-delay: 1s;
+}
+.custom-title span:nth-of-type(2).animate {
+  transition-delay: 1.5s;
+}
+.custom-title span:nth-of-type(3).animate {
+  transition-delay: 2s;
+}
+.custom-tag-line.animate {
+  transition-delay: 2.5s;
+}
+
+/***************/
+/* latest news */
+/***************/
+.SliderInner {
+  transform: translateY(50%);
+  visibility: hidden;
+}
+.SliderInner.animate {
+  transform: translateY(0);
+  visibility: visible;
+  transition-delay: 1s;
+}
+
+/******************/
+/* resources page */
+/******************/
+/*
+.news-row .article-category {
+  transform: scale(0);
+  visibility: hidden;
+}
+.news-row .big-article .article-category.animate {
+  transform: scale(1);
+  transition-delay: 1s;
+  transition-timing-function: linear;
+  visibility: visible;
+}
+.news-row .remaining-articles .article-category.animate {
+  transform: scale(1);
+  transition-delay: 2.5s;
+  transition-timing-function: linear;
+  visibility: visible;
+}
+*/
+.news-row .big-article {
+  transform: translate(-50%);
+  visibility: hidden;
+}
+.news-row:nth-child(even) .big-article {
+  transform: translate(50%);
+  visibility: hidden;
+}
+.news-row .big-article.animate {
+  transform: translate(0);
+  visibility: visible;
+/*  transition-duration: 1s;*/
+}
+.news-row .remaining-articles article {
+  transform: translate(50%);
+  visibility: hidden;
+}
+.news-row:nth-child(even) .remaining-articles article {
+  transform: translate(-50%);
+  visibility: hidden;
+}
+.news-row .remaining-articles article.animate {
+  transform: translate(0);
+  visibility: visible;
+/*  transition-duration: 0.5s;*/
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
+}
+.news-row .remaining-articles article:nth-child(1).animate {
+  transition-delay: 1s;
+}
+.news-row .remaining-articles article:nth-child(2).animate {
+  transition-delay: 1.5s;
+}
+.news-row .remaining-articles article:nth-child(3).animate {
+  transition-delay: 2s;
+}
+.news-row .remaining-articles article:nth-child(4).animate {
+  transition-delay: 2.5s;
+}
+.news-row:nth-child(even) .remaining-articles article:nth-child(2).animate { /* 2nd article of 2nd row should fade in first */
+  transition-delay: 1s;
+}
+.news-row:nth-child(even) .remaining-articles article:nth-child(1).animate { /* 1st article of 2nd row should fade in first */
+  transition-delay: 1.5s;
+}
+.news-row:nth-child(even) .remaining-articles article:nth-child(4).animate { /* 4th article of 2nd row should fade in first */
+  transition-delay: 2s;
+}
+.news-row:nth-child(even) .remaining-articles article:nth-child(3).animate { /* 3rd article of 2nd row should fade in first */
+  transition-delay: 2.5s;
+}
+
+/********************/
+/* single post page */
+/********************/
+
+.post-custom-title {
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+.post-page .article-date {
+  transform: translateX(-20%);
+  visibility: hidden;
+}
+.post-custom-title.animate,
+.post-page .article-date.animate  {
+  transform: translateX(0);
+  visibility: visible;
+}
+.post-page .article-date.animate {
+  transition-delay: 0.5s;
+}
+.post-content-top,
+.post-wrap {
+  transform: translateY(50%);
+  visibility: hidden;
+}
+.post-content-top.animate,
+.post-wrap.animate {
+  transform: translateY(0);
+  visibility: visible;
+  transition-duration: 1s;
+}
+
+
+@media (max-width: 900px) {
+  /****************/
+  /* hero section */
+  /****************/
+  .page-hero .container .text-overlay {
+    visibility: hidden;
+    transform: translateY(0) scale(0) !important;
+  }
+  .page-hero .container .text-overlay.animate {
+    visibility: visible;
+    transform: translateY(0) scale(1) !important;
+    transition-delay: 1.5s;
+  }
+  .custom-title span,
+  .custom-tag-line {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .custom-title span:nth-of-type(1).animate {
+    transition-delay: 1s;
+  }
+  .custom-title span:nth-of-type(2).animate {
+    transition-delay: 1.5s;
+  }
+  .custom-title span:nth-of-type(3).animate {
+    transition-delay: 2s;
+  }
+  .custom-tag-line.animate {
+    transition-delay: 2.5s;
+  }
+}

@@ -1,0 +1,691 @@
+/*
+Theme Name: Custom Theme - Muhammad Zia
+Theme URI: https://mohsinziaofficial.com/
+Author: Muhammad Zia
+Author URI: https://mohsinziaofficial.com/
+Description: A custom WordPress theme developed by Muhammad Zia.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: customtheme
+*/
+
+/********* header and menu ***********/
+* {
+  transition: all 1s linear;
+}
+header {
+  position: relative;
+  z-index: 1000;
+}
+header > .container {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+.bg-overlay {
+  width: 100%;
+  height: 125px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  opacity: 0.7;
+  z-index: 0;
+}
+.header-menu {
+  height: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*
+.header-menu .logo img {
+  width: 80%;
+}
+*/
+.menu-div {
+  display: flex;
+  align-items: center;
+}
+.contact-badge {
+  display: flex;
+  align-items: center;
+  background-color: var(--blue);
+  padding: 7px 7px 7px 30px;
+  border-radius: 50px;
+  color: var(--white);
+  font-weight: 700;
+}
+.email-button {
+  margin-left: 30px;
+  background-color: var(--white);
+  padding: 5px 20px;
+  color: var(--navy);
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid var(--white);
+}
+.email-button:hover {
+  background-color: transparent;
+  color: var(--white);
+}
+.search-icon {
+  margin-left: 10px;
+}
+.search-icon i {
+  font-size: 30px;
+  cursor: pointer;
+}
+.search-form-popup {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  display: grid;
+  visibility: hidden;
+  opacity: 0; /* Start invisible */
+  pointer-events: none; /* Prevent clicks on the popup and pass through it for the elements behind */
+  align-items: center;
+  justify-items: center;
+}
+.search-form-popup.show {
+  visibility: visible;
+  opacity: 1; /* Start invisible */
+  pointer-events: auto; /* Allow clicks on the popup */
+}
+.search-form-popup .popup-overlay {
+  position: fixed;
+  width: inherit;
+  height: inherit;
+  background-color: var(--navy);
+  opacity: 0;
+}
+.search-form-popup .popup-overlay.animate {
+  opacity: 0.9;
+}
+.search-form-popup .search-form-div {
+  position: fixed;
+  z-index: 1000;
+  opacity: 0;
+}
+.search-form-popup .search-form-div.animate {
+  opacity: 1;
+}
+.search-form-popup .search-form-div .popup-close-btn span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  background-color: var(--white);
+  padding: 0px 0px 0px 6px;
+  font-weight: 700;
+  color: var(--navy);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.search-form-popup .search-form-div .popup-close-btn span:hover {
+  transition-duration: 0.3s;
+  background-color: var(--red);
+  color: var(--white);
+}
+.search-form-popup .searchform input[type="text"] {
+  height: 50px;
+  width: 300px;
+  border: 0px !important;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0 10px;
+}
+.search-form-popup .searchform input[type="submit"] {
+  height: 50px;
+  width: 100px;
+  border: 0px !important;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: -5px;
+}
+/*********************************/
+
+
+
+/************ home page hero section ***********/
+.page-hero {
+  height: 600px;
+}
+.page-hero .container {
+  position: relative;
+  height: inherit;
+}
+.page-hero .bg-and-news {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.page-hero .bg-and-news .left {
+  width: 60%;
+  margin-left: 10%;
+  background-color: var(--blue); /* Example background color */
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-hero .bg-and-news .right {
+  width: 30%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+}
+.page-hero .container .text-overlay {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.custom-title span {
+  display: inline-block;
+  background-color: var(--white);
+  font-size: 50px;
+  border-radius: 20px;
+  padding: 20px 20px 20px 0;
+  line-height: 1.5em;
+  margin-bottom: -20px;
+}
+/* if there is a <br> tag between the title then 'nth-child' will not work so use 'nth-of-type' */
+.custom-title span:nth-of-type(1) {
+  color: var(--navy);
+}
+.custom-title span:nth-of-type(2) {
+  color: var(--blue);
+}
+.custom-tag-line {
+  width: 70%;
+  font-size: 22px;
+  color: var(--navy);
+  background-color: var(--white);
+  padding: 20px 20px 20px 0;
+  border-radius: 20px;
+  margin-top: -20px;
+  line-height: 1.2em;
+}
+.hero-article {
+  height: 100%;
+  display: flex;
+  padding: 0px 30px;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-article .article-title, .hero-article .article-date {
+  color: var(--white);
+  margin-bottom: 30px;
+  line-height: 1.2em;
+}
+.hero-article .article-date {
+  font-size: 20px;
+}
+.main-content {
+  margin: 50px 0;
+}
+/* Add margin to the slides */
+.SliderWrap .slick-slide {
+  margin: 0 20px; /* Adjust the margin value as needed */
+}
+/* Adjust the slick-track to prevent overflowing */
+.SliderWrap .slick-list {
+  padding: 0 10px; /* Optional: Adds padding on the sides of the slider */
+}
+.SliderWrap .SlideContent {
+  position: relative;
+}
+.SliderWrap .SlideContent article {
+  width: 100%;
+  /*  max-width: 375px;*/
+}
+.SliderWrap .SlideContent article:hover .article-category a {
+  background-color: var(--white) !important;
+  color: var(--navy) !important;
+}
+.SliderWrap .SlideContent article .FeatureImage {
+  width: 100%;
+  /*  max-width: 375px;*/
+  height: 210px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.SliderWrap .SlideContent article .article-title, .SliderWrap .SlideContent article .article-date {
+  padding: 0 20px;
+}
+.SliderWrap .SlideContent article .article-category {
+  position: absolute;
+  top: 100px;
+  left: -20px;
+}
+/****************************/
+
+
+
+/******** contact form **********/
+.contact-form-inner-wrap {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.contact-form-inner-wrap .left {
+  width: 15%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.contact-form-inner-wrap .left .overlay-text {
+  position: absolute;
+  z-index: 10;
+  top: 10%;
+}
+.contact-form-inner-wrap .left .overlay-text .custom-tag-line {
+  width: 57%;
+}
+.contact-form-inner-wrap .right {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin: auto;
+  overflow: hidden; /* Ensure the rounded corners work */
+  border-radius: 40px; /* Apply rounded corners */
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-form-inner-wrap .video-bg .form-title {
+  font-size: 25px;
+  font-weight: 700;
+  width: 60%;
+  margin: 0 auto;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact-form-inner-wrap .video-bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the container */
+  z-index: -1; /* Position the video behind other elements */
+  border-radius: 15px; /* Ensures video respects rounded corners */
+}
+.contact-form-inner-wrap .contact-form {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100000;
+  padding: 20px;
+}
+.contact-form-inner-wrap .contact-form .gform_fields {
+  row-gap: 10px;
+  grid-row-gap: 10px;
+}
+.contact-form-inner-wrap .contact-form input[type="text"] {
+  background-color: var(--grey);
+  font-size: 16px;
+  height: 55px;
+  text-indent: 20px;
+  border-radius: 50px;
+}
+.gform-theme--foundation .gform_footer {
+  position: absolute;
+  right: 30px;
+  bottom: 30%;
+  transform: translateY(100%);
+}
+.gform-theme--foundation .gform_footer .gform_button {
+  text-transform: uppercase !important;
+  background-color: var(--blue) !important;
+  border: 2px solid var(--blue) !important;
+  border-radius: 50px !important;
+  padding: 15px 30px !important;
+  font-size: 18px !important;
+}
+.gform-theme--foundation .gform_footer .gform_button:hover {
+  background-color: transparent !important;
+  border: 2px solid var(--white) !important;
+}
+.privacy-notice {
+  width: 70%;
+  color: var(--white) !important;
+  margin-top: 30px !important;
+}
+.privacy-notice a {
+  color: var(--white) !important;
+}
+.privacy-notice a:hover {
+  color: var(--navy) !important;
+}
+.gform_confirmation_message {
+  color: var(--white) !important;
+  font-size: 16px !important;
+  font-weight: 700!important;
+  margin: 50px 0!important;
+}
+/*****************************/
+
+
+
+/************ inner pages *************/
+
+/**************************************/
+
+
+
+/************* resources page **************/
+.PageWrap {
+  margin-bottom: 100px;
+}
+.inner-page {
+  padding: 0 40px;
+}
+.inner-page-top {
+  margin: 20px 0 50px 0;
+}
+.inner-page-top .page-title {
+  font-size: 50px;
+  color: var(--navy);
+}
+.inner-page-top .tag-line {
+  font-size: 25px;
+  color: var(--navy);
+}
+.news-row {
+  display: flex;
+  width: 100%;
+  gap: 30px; /* Optional, space between the big article and remaining articles */
+}
+.news-row:nth-child(even) {
+  flex-direction: row-reverse;
+  margin-top: 30px;
+}
+.news-row .big-article {
+  flex: 1 1 50%; /* Flex-grow, flex-shrink, and flex-basis set to 50% */
+  box-sizing: border-box;
+  /*  background-color: var(--red);*/
+  border-radius: 10px;
+  position: relative;
+}
+.news-row .article-img {
+  position: relative;
+  height: 210px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.news-row .big-article .article-img {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+/*
+.news-row .article-img img {
+  border-radius: 10px;
+  width: 100%;
+}
+*/
+.news-row .big-article .article-img {
+  width: 100%;
+  height: 400px;
+}
+.news-row .big-article .article-content {
+  padding: 30px 50px;
+}
+.news-row .big-article .article-title, .news-row .big-article .article-date {
+  color: var(--white);
+}
+.news-row .big-article.yellow-bg .article-title, .news-row .big-article.yellow-bg .article-date {
+  color: var(--navy);
+}
+.news-row .big-article .article-category {
+  position: absolute;
+  top: 20px;
+  left: -20px;
+}
+.news-row .remaining-articles {
+  flex: 1 1 50%; /* Flex-grow, flex-shrink, and flex-basis set to 50% */
+  display: flex;
+  flex-wrap: wrap; /* Allows articles to wrap to the next line */
+  gap: 30px; /* Space between the articles */
+  box-sizing: border-box;
+}
+.news-row .remaining-articles article {
+  flex: 1 1 calc(50% - 20px); /* Each article takes 50% of the row minus gap */
+  box-sizing: border-box;
+  position: relative;
+}
+.news-row .remaining-articles article .article-content {
+  padding: 10px;
+}
+.news-row .remaining-articles article .article-content p {
+  line-height: 1.2em;
+}
+.news-row .remaining-articles article .article-content .article-date {
+  font-size: 14px;
+}
+.news-row .remaining-articles article .article-category {
+  position: absolute;
+  bottom: 20px;
+  left: -20px;
+}
+/**********************************/
+
+
+
+/******* post single page *******/
+.post-page-top {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.post-page-top .FeaturedImage {
+  width: 100%;
+  margin-left: 15%;
+  background-color: var(--blue);
+  border-radius: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.post-page .text-overlay {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.post-custom-title {
+  width: 60%;
+}
+.post-custom-title .title {
+  color: var(--navy);
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 10px 10px 10px 0;
+  display: inline;
+  word-wrap: break-word;
+  line-height: 1.4em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  background-color: var(--white);
+  padding-right: 30px;
+  border-radius: 20px;
+}
+.article-date {
+  margin-top: 20px;
+}
+.post-content {
+  padding: 50px 0;
+}
+.post-content .breadcrumbs-wrap {
+  margin-bottom: 50px;
+}
+.post-content .breadcrumbs-wrap p {
+/*
+  display: inline;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--navy);
+*/
+}
+.post-content .post-custom-tag-line {
+  width: 75%;
+  margin: 50px 0 70px 0;
+}
+.post-content .post-author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: var(--lightblue);
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+.post-content .author-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.post-content .author-image img {
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--navy);
+}
+.post-content .author-name p {
+  font-weight: 700;
+}
+.post-wrap {
+  display: flex;
+  gap: 100px;
+}
+.post-wrap .post-content-text {
+  width: 75%
+}
+.post-wrap .related-news {
+  width: 25%;
+}
+.post-wrap .related-news-item {
+  margin-bottom: 30px;
+}
+.post-wrap .related-news-img {
+  height: 210px;
+  background-size: cover;
+  border-radius: 10px;
+  background-position: center;
+}
+.post-wrap .related-news-title {
+  margin: 10px 0;
+  line-height: 1.3em;
+}
+/********************************/
+
+
+
+/********* archive page ***********/
+.ArchiveWrap {
+  padding: 100px 0;
+}
+.archive-loop article img {
+  border-radius: 20px;
+}
+.archive-loop article .ArticleTitle {
+  font-size: 16px;
+}
+.archive-loop article .btn:hover {
+  background-color: var(--navy) !important;
+  color: var(--white) !important;
+}
+/**********************************/
+
+
+
+/******* search and 404 page *******/
+.NoFoundSearch {
+  margin: 50px 0;
+}
+.NoFoundSearch input[type="text"] {
+  width: 100%;
+  border-radius: 20px;
+  height: 40px;
+  padding: 0 20px;
+}
+.NoFoundSearch input[type="submit"] {
+  width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+/***********************************/
+
+
+
+/************ Footer *****************/
+.footer-wrap .footer-top {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+/*
+.footer-top .logo img {
+  width: 80%;
+}
+*/
+.footer-top .links p {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.footer-top .links p a {
+  font-weight: 400;
+}
+.footer-top .links p a:hover {
+  color: var(--blue);
+}
+.footer-wrap .footer-bottom {
+  background-color: var(--grey);
+  padding: 50px 0;
+}
+.footer-wrap .footer-bottom p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+/*
+.link-under-border a {
+  position: relative;
+  text-decoration: none;
+}
+.link-under-border a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--navy);
+  transition: width 0.3s ease-in-out;
+}
+.link-under-border a:hover::after {
+  width: 100%;
+}
+*/
+/************ Footer *****************/
