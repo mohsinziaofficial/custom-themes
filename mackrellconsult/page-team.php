@@ -1,0 +1,59 @@
+<?php
+/**
+ * 
+ * Template Name: Team
+ */
+?>
+<?php get_header();?>
+
+<?php
+  $bg = array('img/Page-Banner.jpg', 'img/Page-Banner-2.jpg', 'img/Page-Banner-3.jpg' );
+
+  $i = rand(0, count($bg)-1); // generate random number size of the array
+  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
+?>
+<div class="PageTitle">
+	<div class="PageTitleInner" style="background-image: url('<?php bloginfo('template_directory'); ?>/<?php echo $selectedBg; ?>')">
+		<div class="container">
+			<h1><?php echo get_the_title(); ?></h1>
+			
+		</div>
+	</div>
+</div>
+<div id="contentArea">
+	<div class="container">
+		<div id="BreadcrumbsWrap">
+			<?php if ( function_exists('yoast_breadcrumb') ) {
+				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+			} ?>
+		</div>
+		<div class="ContentWrap TeamWrap">
+			<div class="ContentInner">
+				<?php the_content();?>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<?php
+if (is_page('39')) {}
+else { ?>
+<div class="ChallengeUs">
+	<div class="container">
+		<h4>We Open Doors<span class="Gold">.</span></h4>
+		<p>Well connected advisers can introduce you and your business to experts and new customers across the Middle East and Globally.</p>
+		<a class="Button" href="/contact-us/">Challenge Us</a>
+	</div>
+</div>
+  <?php } ?>
+
+
+
+
+
+
+
+
+
+<?php get_footer();?>
