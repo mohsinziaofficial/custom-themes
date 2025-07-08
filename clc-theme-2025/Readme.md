@@ -1,23 +1,53 @@
 # Live Demo  
 
 To explore the theme in action, visit:  
-🔗 [Live Preview](https://www.cartercamerons.com/)  
+🔗 [Live Preview](https://mackrell.com/)  
 
 # Screenshot 
 
-![screencapture-cartercamerons-2025-03-13-02_54_57](https://github.com/user-attachments/assets/664ba67a-84b5-464d-b649-7ba8eea2113f)
+![screencapture-mackrell-2025-07-08-11_34_38](https://github.com/user-attachments/assets/88fb9bcf-8ebc-4816-871d-e506a797d43d)
+
 
 # Theme Overview  
 
-This premium WordPress theme is designed for advanced users who require high flexibility and customization. It comes with built-in **Custom Post Types**, **Custom Widgets**, **Advanced Custom Fields (ACF)**, and **Custom Shortcodes**, making it an excellent choice for dynamic, content-driven websites. With a well-structured layout and smooth animations, this theme ensures both functionality and an engaging user experience.  
+This premium WordPress theme is designed for advanced users who require high flexibility and customization. It comes with built-in **Custom Post Types**, **Advanced Custom Fields (ACF)**, and **Custom Shortcodes**, making it an excellent choice for dynamic, content-driven websites. With a well-structured layout and smooth animations, this theme ensures both functionality and an engaging user experience.  
 
 # Features  
 
 - **Custom Post Types (CPTs)**  
-  Effortlessly manage specialized content such as services, case studies, or testimonials beyond regular posts and pages.  
+  Effortlessly manage specialized content such as services, case studies, or testimonials beyond regular posts and pages.
+  
+- **Testimonials (CPTs)**  
+  This WordPress theme includes a fully functional Testimonial custom post type, allowing you to easily showcase client feedback and reviews throughout your site. This feature is built directly into the theme—no extra plugins required.
 
-- **Custom Widgets**  
-  Extend your website’s functionality with purpose-built widgets that enhance usability and design.  
+  **Key Features:**
+
+  - Custom post type for managing testimonials in the admin area
+
+  - Support for client name, image (optional), title/position, and testimonial content
+
+  - Optional categorization and tags for organizing testimonials
+
+  - Easily display testimonials using built-in shortcodes, widgets, or custom template sections
+
+  - Responsive layout designed to match the theme's look and feel
+  
+- **Team Profile (CPTs)**  
+  This theme also includes a Team custom post type, giving you a structured and visually appealing way to introduce your staff or team members.
+
+  **Key Features:**
+
+  - Custom post type specifically for team member profiles
+
+  - Support for name, job title, bio/description, and profile image
+
+  - Optional fields for social media links (e.g., LinkedIn, Twitter)
+
+  - Designed to integrate into team sections or dedicated team pages with ease
+
+  - Fully responsive and styled to match your site’s design
+
+  - Ideal for showcasing your organization’s people in a clean, professional layout.  
 
 - **Advanced Custom Fields (ACF) Support**  
   Provides full control over content customization with structured data fields for better content management.  
