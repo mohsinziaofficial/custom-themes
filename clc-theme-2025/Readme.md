@@ -5,7 +5,8 @@ To explore the theme in action, visit:
 
 # Screenshot 
 
-![screencapture-mackrell-2025-07-08-11_34_38](https://github.com/user-attachments/assets/88fb9bcf-8ebc-4816-871d-e506a797d43d)
+![screencapture-mackrell-2025-07-08-11_34_38](https://github.com/user-attachments/assets/349915b6-d7d5-475b-9f6f-d6a7e2e05053)
+
 
 
 # Theme Overview  
