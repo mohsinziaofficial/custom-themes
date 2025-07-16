@@ -1,0 +1,1226 @@
+.OpeningContent {
+  background-color: var(--blue);
+
+  padding: 131.5px 0 0 0;
+}
+
+.OpeningContent p,
+.OpeningContent li {
+  color: #fff;
+}
+
+#breadcrumbs a,
+#breadcrumbs {
+  color: #fff;
+}
+
+#breadcrumbs a:hover {
+  color: var(--orange);
+}
+
+.OpeningContent h1 {
+  font-size: 80px;
+
+  font-weight: 400;
+
+  color: var(--white);
+
+  margin: 0;
+}
+
+.TitleWrap {
+  margin-bottom: 75px;
+}
+
+.PageTeam {
+  padding: 100px 0;
+
+  background-color: var(--green);
+}
+
+.PageRelatedLinks {
+  padding: 100px 0;
+
+  background-color: var(--orange);
+}
+
+.PageGuides {
+  padding: 100px 0;
+
+  background-color: #fff;
+}
+
+.team-members {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.SectionLargeTitle {
+  font-size: 130px;
+
+  font-weight: 400;
+
+  color: var(--white);
+}
+
+.SectionLargeTitle.Coloured {
+  color: var(--blue);
+}
+
+.team-member h3 {
+  color: var(--blue);
+
+  margin-top: 10px;
+
+  margin-bottom: 0;
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+  line-height: 1.5em;
+}
+
+.team-member h3 a {
+  color: inherit;
+}
+
+.team-member h3 a:hover {
+  color: var(--orange);
+}
+
+.JobRole {
+  margin-bottom: 0;
+}
+
+.Teamemail,
+.Teamemail a {
+  font-size: 16px;
+
+  margin-bottom: 0;
+
+  color: var(--blue);
+}
+
+.Teamemail a:hover {
+  color: #fff;
+}
+
+.GridBox .container {
+  display: grid;
+
+  grid-template-columns: 25% auto;
+
+  gap: 50px;
+}
+
+.related-links {
+  margin: 0;
+
+  padding: 0;
+
+  list-style-type: none;
+
+  display: flex;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.related-links a {
+  padding: 5px 15px;
+
+  background-color: #fff;
+
+  color: var(--blue);
+
+  display: block;
+
+  border-radius: 3px;
+}
+
+.related-links a:hover {
+  background-color: var(--blue);
+
+  color: #fff;
+}
+
+.PageRelatedLinks h3 {
+  color: #fff;
+
+  margin-bottom: 0;
+}
+
+.GuideWrap {
+  margin: 0;
+
+  padding: 0;
+
+  list-style-type: none;
+
+  display: flex;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.GuideWrap a {
+  padding: 5px 45px 5px 15px;
+
+  background-color: var(--blue);
+
+  color: #fff;
+
+  display: block;
+
+  position: relative;
+
+  border-radius: 3px;
+}
+
+.GuideWrap a:hover {
+  background-color: var(--green);
+
+  color: var(--blue);
+}
+
+.DownloadIcon {
+  position: absolute;
+
+  right: 15px;
+}
+
+.OpeningContent p a:hover,
+.OpeningContent li a:hover {
+  color: #fff;
+}
+
+.WhiteBG {
+  background-color: #fff;
+
+  padding-top: 40px;
+}
+
+.WhiteBG p,
+.WhiteBG li,
+.WhiteBG a:hover {
+  color: var(--blue);
+}
+
+.vc_row.wpb_row.vc_row-fluid.container {
+  margin: 0 auto;
+
+  padding: 0 5px;
+}
+
+.PostContent {
+  background-color: #fff;
+}
+
+.ArchiveWrap .OpeningContent .TitleWrap,
+.PostWrap .OpeningContent .TitleWrap {
+  margin-bottom: 0;
+}
+
+.PostWrap .OpeningContent,
+.ArchiveWrap .OpeningContent {
+  padding-bottom: 50px;
+}
+
+.PostContent {
+  padding: 50px 0;
+}
+
+.FeaturedImage {
+  float: right;
+
+  margin: 0 0 10px 10px;
+
+  max-width: 300px;
+}
+
+.ArchiveItemWrap {
+  padding: 50px 0;
+}
+
+.archive-loop h3 a,
+.archive-loop h3,
+.event-loop h3 a,
+.event-loop h3 {
+  font-size: 24px;
+
+  font-weight: 700;
+
+  color: var(--blue);
+
+  line-height: 1.5em;
+}
+
+.nav-links .page-numbers.current {
+  background-color: var(--blue);
+}
+
+.nav-links .page-numbers {
+  font-size: 18px;
+
+  color: #fff;
+
+  background-color: var(--orange);
+}
+
+.archive-loop article {
+  position: relative;
+}
+
+.archive-loop article::before {
+  width: 80px;
+
+  height: 80px;
+
+  position: absolute;
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-size: contain;
+}
+
+.archive-loop article:nth-child(4n)::before {
+  content: "";
+
+  background-image: url("/wp-content/uploads/2025/06/Crown.svg");
+
+  top: -46px;
+
+  left: -35px;
+}
+
+.archive-loop article:nth-child(6n)::before {
+  content: "";
+
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Star-Orange.svg");
+
+  width: 40px;
+
+  bottom: 0;
+
+  height: 40px;
+
+  right: 41px;
+}
+
+.archive-loop article:nth-child(4n-1)::before {
+  content: "";
+
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Heart-Green.svg");
+
+  width: 50px;
+
+  height: 50px;
+
+  right: 0;
+
+  top: 118px;
+}
+
+.ArchiveItemWrap .Button {
+  background-color: #fff;
+
+  border: 1px solid var(--orange);
+
+  padding: 11px 22px;
+
+  color: var(--blue);
+
+  font-size: 14px;
+}
+
+.ArchiveItemWrap .Button:hover {
+  background-color: var(--orange);
+
+  color: #fff;
+}
+
+.archive-loop {
+  column-gap: 30px;
+
+  row-gap: 60px;
+}
+
+.event-loop {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.EventPost .TitleWrap .Button {
+  background-color: var(--blue);
+
+  color: #fff;
+}
+
+.EventPost .Button {
+  background-color: #fff;
+
+  border: 1px solid var(--orange);
+
+  padding: 11px 22px;
+
+  color: var(--blue);
+
+  font-size: 14px;
+}
+
+.EventPost .Button:hover {
+  background-color: var(--orange);
+
+  color: #fff;
+}
+
+.team-member {
+  opacity: 1;
+
+  transform: scale(1);
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.team-member.hidden {
+  opacity: 0;
+
+  transform: scale(0.95);
+
+  pointer-events: none;
+}
+
+/* Fully hide after transition */
+
+.team-member.hidden[style*="display: none"] {
+  display: none !important;
+}
+
+.archive-loop.team-loop {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.TeamFilters {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-bottom: 50px;
+}
+
+.archive-loop.team-loop article:nth-child(4n-1)::before {
+  display: none;
+}
+
+.archive-loop.team-loop article:nth-child(5n-1)::before {
+  content: "";
+
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Heart-Green.svg");
+
+  width: 50px;
+
+  height: 50px;
+
+  right: -17px;
+
+  top: -21px;
+}
+
+.archive-loop.team-loop article:nth-child(6n)::before {
+  display: none;
+}
+
+.archive-loop.team-loop article:nth-child(5n-3)::before {
+  content: "";
+
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Star-Orange.svg");
+
+  width: 40px;
+
+  bottom: unset;
+
+  height: 40px;
+
+  right: unset;
+
+  top: -27px;
+
+  left: -17px;
+}
+
+.team-thumbnail {
+  width: 270px;
+
+  height: 350px;
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+.team-email a {
+  font-size: 16px;
+}
+
+.team-job-title {
+  margin-bottom: 0;
+}
+
+.team-search-form button {
+  padding: 5px 15px;
+
+  border: 0;
+
+  background-color: var(--orange);
+
+  color: #fff;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: all 0.5s ease-in-out;
+
+  white-space: nowrap;
+}
+
+.team-search-form {
+  flex: 1;
+
+  display: flex;
+
+  gap: 10px;
+
+  margin-bottom: 0;
+}
+
+.team-search-form input {
+  flex: 1;
+
+  width: auto;
+
+  margin-bottom: 0;
+
+  border: 1px solid #999;
+
+  font-size: 20px;
+
+  line-height: 1.5em;
+
+  font-weight: 400;
+
+  color: var(--blue);
+
+  padding: 5px 15px;
+}
+
+.team-filter {
+  flex-shrink: 0;
+}
+
+.team-filter button {
+  padding: 0px;
+}
+
+.team-filter button {
+  padding: 5px 10px;
+
+  border: 0;
+
+  background-color: var(--orange);
+
+  color: #fff;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.team-filter button:hover {
+  background-color: var(--blue);
+}
+
+.team-filter-dropdown {
+  padding: 5px 15px;
+
+  border: 1px solid #999;
+
+  font-size: 16px;
+
+  background-color: #fff;
+
+  cursor: pointer;
+
+  min-width: 150px;
+}
+
+.team-filter-dropdown:focus {
+  outline: none;
+
+  border-color: var(--orange);
+}
+
+/* Crown */
+.icon-crown {
+  position: relative;
+  overflow: hidden;
+}
+.icon-crown::before,
+.icon-crown::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Crown.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-crown.left::before {
+  display: block;
+  left: -13px;
+  top: -16px;
+}
+.icon-crown.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(-1);
+}
+/* End Crown */
+/* Heart */
+.icon-heart-blue {
+  position: relative;
+  overflow: hidden;
+}
+.icon-heart-blue::before,
+.icon-heart-blue::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Heart-Blue.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-heart-blue.left::before {
+  display: block;
+  left: -1px;
+  top: -1px;
+  width: 35px;
+  height: 35px;
+  transform: scaleX(-1) rotate(23deg);
+}
+.icon-heart-blue.right::after {
+  display: block;
+  right: 10px;
+  top: 0;
+  transform: scaleX(1) rotate(23deg);
+}
+.icon-heart-green {
+  position: relative;
+  overflow: hidden;
+}
+.icon-heart-green::before,
+.icon-heart-green::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Heart-Green.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-heart-green.left::before {
+  display: block;
+  width: 35px;
+  height: 35px;
+  left: 5px;
+  top: -1px;
+  transform: scaleX(-1) rotate(23deg);
+}
+.icon-heart-green.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(1) rotate(23deg);
+}
+
+.icon-heart-orange {
+  position: relative;
+  overflow: hidden;
+}
+.icon-heart-orange::before,
+.icon-heart-orange::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Heart-Orange.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-heart-orange.left::before {
+  display: block;
+  width: 35px;
+  height: 35px;
+  left: 5px;
+  top: -1px;
+  transform: scaleX(-1) rotate(23deg);
+}
+.icon-heart-orange.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(1) rotate(23deg);
+}
+/* End Heart */
+/* Star */
+.icon-star-green {
+  position: relative;
+  overflow: hidden;
+}
+.icon-star-green::before,
+.icon-star-green::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Star-Green.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-star-green.left::before {
+  display: block;
+  width: 35px;
+  height: 35px;
+  left: 5px;
+  top: -1px;
+  transform: scaleX(-1) rotate(23deg);
+}
+.icon-star-green.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(1) rotate(23deg);
+}
+.icon-star-blue {
+  position: relative;
+  overflow: hidden;
+}
+.icon-star-blue::before,
+.icon-star-blue::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Star-Blue.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-star-blue.left::before {
+  display: block;
+  width: 35px;
+  height: 35px;
+  left: -1px;
+  top: -1px;
+  transform: scaleX(-1) rotate(23deg);
+}
+.icon-star-blue.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(1) rotate(23deg);
+}
+.icon-star-yellow {
+  position: relative;
+  overflow: hidden;
+}
+.icon-star-yellow::before,
+.icon-star-yellow::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Star-Yellow.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-star-yellow.left::before {
+  display: block;
+  width: 35px;
+  height: 35px;
+  left: -1px;
+  top: -1px;
+  transform: scaleX(-1) rotate(23deg);
+}
+.icon-star-yellow.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(1) rotate(23deg);
+}
+.icon-star-orange {
+  position: relative;
+  overflow: hidden;
+}
+.icon-star-orange::before,
+.icon-star-orange::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Star-Orange.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-star-orange.left::before {
+  display: block;
+  width: 35px;
+  height: 35px;
+  left: -1px;
+  top: -1px;
+  transform: scaleX(-1) rotate(23deg);
+}
+.icon-star-orange.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(1) rotate(23deg);
+}
+/* End Star */
+/* Phone */
+.icon-phone-green {
+  position: relative;
+  overflow: hidden;
+}
+.icon-phone-green::before,
+.icon-phone-green::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Phone-Green.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-phone-green.left::before {
+  display: block;
+  width: 35px;
+  height: 35px;
+  left: -1px;
+  top: -1px;
+  transform: scaleX(1) rotate(23deg);
+}
+.icon-phone-green.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(-1) rotate(23deg);
+}
+.icon-phone-orange {
+  position: relative;
+  overflow: hidden;
+}
+.icon-phone-orange::before,
+.icon-phone-orange::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Phone-Orange.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-phone-orange.left::before {
+  display: block;
+  width: 35px;
+  height: 35px;
+  left: -1px;
+  top: -1px;
+  transform: scaleX(1) rotate(23deg);
+}
+.icon-phone-orange.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(-1) rotate(23deg);
+}
+.icon-phone-yellow {
+  position: relative;
+  overflow: hidden;
+}
+.icon-phone-yellow::before,
+.icon-phone-yellow::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Phone-Yellow.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-phone-yellow.left::before {
+  display: block;
+  width: 35px;
+  height: 35px;
+  left: -1px;
+  top: -1px;
+  transform: scaleX(1) rotate(23deg);
+}
+.icon-phone-yellow.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(-1) rotate(23deg);
+}
+.icon-phone-blue {
+  position: relative;
+  overflow: hidden;
+}
+.icon-phone-blue::before,
+.icon-phone-blue::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Phone-Blue.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-phone-blue.left::before {
+  display: block;
+  left: -35px;
+  top: -16px;
+  transform: scaleX(1) rotate(23deg);
+}
+.icon-phone-blue.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(-1) rotate(23deg);
+}
+/* End Phone */
+/* Email */
+.icon-email-green {
+  position: relative;
+  overflow: hidden;
+}
+.icon-email-green::before,
+.icon-email-green::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Mail-Green.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-email-green.left::before {
+  display: block;
+  width: 35px;
+  height: 35px;
+  left: -1px;
+  top: -1px;
+  transform: scaleX(-1) rotate(19deg);
+}
+.icon-email-green.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(1) rotate(19deg);
+}
+.icon-email-orange {
+  position: relative;
+  overflow: hidden;
+}
+.icon-email-orange::before,
+.icon-email-orange::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Mail-Orange.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-email-orange.left::before {
+  display: block;
+  width: 35px;
+  height: 35px;
+  left: -1px;
+  top: -1px;
+  transform: scaleX(-1) rotate(19deg);
+}
+.icon-email-orange.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(1) rotate(19deg);
+}
+.icon-email-yellow {
+  position: relative;
+  overflow: hidden;
+}
+.icon-email-yellow::before,
+.icon-email-yellow::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Mail-Yellow.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-email-yellow.left::before {
+  display: block;
+  width: 35px;
+  height: 35px;
+  left: -1px;
+  top: -1px;
+  transform: scaleX(-1) rotate(19deg);
+}
+.icon-email-yellow.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(1) rotate(19deg);
+}
+.icon-email-blue {
+  position: relative;
+  overflow: hidden;
+}
+.icon-email-blue::before,
+.icon-email-blue::after {
+  content: "";
+  display: none;
+  background-image: url("/wp-content/uploads/2025/06/Hand-Drawn-Mail-Blue.svg");
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+}
+.icon-email-blue.left::before {
+  display: block;
+  left: -35px;
+  top: -16px;
+  transform: scaleX(-1) rotate(19deg);
+}
+.icon-email-blue.right::after {
+  display: block;
+  right: 0px;
+  top: 0;
+  transform: scaleX(1) rotate(19deg);
+}
+/* End Email */
+
+.TeamWrap .TitleWrap h2 {
+  color: #fff;
+
+  font-weight: 400;
+}
+
+.TeamWrap .TitleWrap {
+  padding-bottom: 30px;
+}
+
+.TeamContact a {
+  color: inherit;
+}
+
+.TeamWrap .TitleWrap .TeamContact a:hover {
+  color: var(--orange);
+}
+
+.ProfileContent .container {
+  display: grid;
+
+  grid-template-columns: 70% auto;
+
+  gap: 40px;
+}
+
+.ProfileSocials {
+  display: flex;
+
+  gap: 10px;
+}
+
+.ProfileContent {
+  padding-bottom: 50px;
+}
+
+.ProfileContent p,
+.ProfileContent li {
+  font-size: 18px;
+}
+
+.ProfileSocials a {
+  background-color: var(--blue);
+
+  border-radius: 5px;
+
+  width: 35px;
+
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #fff;
+}
+
+.ProfileSocials a:hover {
+  background-color: var(--orange);
+}
+
+.ProfileSocials {
+  margin-top: 20px;
+}
+
+.Profileimg {
+  position: relative;
+}
+
+.Profileshot .Profileimg::before {
+  content: "";
+
+  background-image: url("/wp-content/uploads/2025/06/Crown.svg");
+
+  width: 80px;
+
+  height: 80px;
+
+  position: absolute;
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-size: contain;
+
+  top: -40px;
+
+  left: -35px;
+}
+
+.Profileimg img {
+  box-shadow: 0 0 11px #999;
+
+  border-radius: 5px;
+}
+.profile-name {
+  padding-bottom: 10px;
+}
+table tr {
+  background-color: #fff;
+}
+.NoFoundSearch .search-field {
+  width: 100%;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: var(--blue);
+}
+.team-feature {
+  padding: 0 10px;
+}
+.team-feature-section .slick-list {
+  padding: 58px 0 0 0;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
